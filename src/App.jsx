@@ -11,11 +11,21 @@
 //   );
 // };
 
+import { useState } from "react";
+import FirstComponent from "./components/FirstComponent";
+
 const App = () => {
-  let data = 'boy'
+  const [x, setX] = useState(0);
+  const btnClick = () => {
+    console.log("clicked");
+    setX(x + 1);
+    console.log(x);
+  };
+
   return (
     <div>
-      {data === 'boy' ? <h1>Boy</h1> : <h1>Girl</h1>}
+      <button onClick={() => btnClick()}>Click Me</button>
+      <FirstComponent data={x} fn={setX} />
     </div>
   );
 };
