@@ -34,21 +34,31 @@
 //   );
 // };
 
-import { useRef, useState } from "react";
+//USEREF REVIEW
+// import { useRef, useState } from "react";
 
-const App = () => {
-  const inputRef = useRef(null)
-  const [data, setData]=useState([])
+// const App = () => {
+//   const inputRef = useRef(null)
+//   const [data, setData]=useState([])
 
-  return (
-    <div>
-      <input type="text" ref={inputRef} />
-      <button onClick={()=>{setData([...data, inputRef.current.value])}}>Submit</button>
-      {data.map((item, index)=>{
-        return <h2 key={index}>{item}</h2>
-      })}
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <input type="text" ref={inputRef} />
+//       <button onClick={()=>{setData([...data, inputRef.current.value])}}>Submit</button>
+//       {data.map((item, index)=>{
+//         return <h2 key={index}>{item}</h2>
+//       })}
+//     </div>
+//   );
+// };
+
+import Todo from "./TodoComponents/Todo";
+
+// TODO LIST
+const App = ()=>{
+  return(<div>
+    <Todo/>
+  </div>)
+}
 
 export default App;
