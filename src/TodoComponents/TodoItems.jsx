@@ -3,7 +3,12 @@ import './CSS/TodoItems.css'
 
 const TodoItems = () => {
   return (
-    <div>TodoItems</div>
+    <div className='todoItems'>
+      <div className='todoItems-container'>
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+    </div>
   )
 }
 
