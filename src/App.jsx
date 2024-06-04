@@ -52,7 +52,7 @@
 //   );
 // };
 
-import Todo from "./TodoComponents/Todo";
+import Todo from "./components/Todo";
 
 // TODO LIST
 const App = ()=>{
